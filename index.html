@@ -3,37 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- 站點標題（瀏覽器分頁 + 搜尋結果標題） -->
   <title>財團法人志玄文教基金會終身學習教育中心</title>
 
-  <!-- ✅ SEO Meta 區塊 -->
-  <meta name="description" content="樂齡瑜珈，溫和動作保護關節，活化筋骨提升核心，放鬆心情、減壓助眠，讓學習成為生活的養分。">
-  <meta name="keywords" content="樂齡瑜珈, 樂活學習, 長輩運動, 健康課程, 社區學習, 銀髮族, 健康樂齡">
-  <meta name="author" content="eyunart">
+  <!-- Canonical：告訴搜尋引擎此頁的首選網址 -->
+  <link rel="canonical" href="https://eyunart.github.io/learn/">
+
+  <!-- ====== SEO Meta ====== -->
+  <meta name="description" content="財團法人志玄文教基金會推動終身學習，提供樂齡瑜珈、語言、藝術、健康等多元課程，打造銀髮族與社區民眾的學習平台。">
+  <meta name="keywords" content="志玄文教基金會, 終身學習, 樂齡學習, 社區大學, 銀髮族課程, 樂齡瑜珈, 成人教育, 台灣社大">
+  <meta name="author" content="財團法人志玄文教基金會">
+  <meta name="robots" content="index,follow" />
 
   <!-- Open Graph (FB / LINE 預覽) -->
-  <meta property="og:title" content="樂活精彩，學習無窮 | 樂齡瑜珈">
-  <meta property="og:description" content="不需要高柔軟度，只要一顆想活動的心！溫和動作、活化筋骨、放鬆心情，小班互動，快來一起參加。">
-  <meta property="og:image" content="https://i.postimg.cc/BQC9rycD/photo-2025-09-23-10-09-25.jpg">
+  <meta property="og:title" content="財團法人志玄文教基金會終身學習教育中心">
+  <meta property="og:description" content="推動終身學習，提供樂齡瑜珈、語言、藝術、健康等多元課程，陪伴您豐富人生。">
   <meta property="og:url" content="https://eyunart.github.io/learn/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="志玄文教基金會 終身學習教育中心">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="https://i.postimg.cc/BQC9rycD/photo-2025-09-23-10-09-25.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="樂活精彩，學習無窮 | 樂齡瑜珈">
-  <meta name="twitter:description" content="樂齡瑜珈，讓學習成為生活的養分。溫和、安全、輕鬆結交新朋友！">
+  <meta name="twitter:title" content="財團法人志玄文教基金會終身學習教育中心">
+  <meta name="twitter:description" content="志玄文教基金會推動終身學習，歡迎加入樂齡學習行列。">
   <meta name="twitter:image" content="https://i.postimg.cc/BQC9rycD/photo-2025-09-23-10-09-25.jpg">
 
   <!-- Favicon -->
   <link rel="icon" href="https://i.postimg.cc/BQC9rycD/photo-2025-09-23-10-09-25.jpg" type="image/png">
 
-  <!-- 結構化資料 JSON-LD -->
+  <!-- 結構化資料（EducationalOrganization） -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "樂齡瑜珈",
+    "@type": "EducationalOrganization",
+    "name": "財團法人志玄文教基金會終身學習教育中心",
     "url": "https://eyunart.github.io/learn/",
     "logo": "https://i.postimg.cc/BQC9rycD/photo-2025-09-23-10-09-25.jpg",
+    "description": "推動終身學習，提供樂齡瑜珈、語言、藝術、健康等多元課程。",
     "sameAs": [
       "https://line.me/ti/p/LUx8E9NxfS"
     ]
@@ -52,7 +63,7 @@
     .hero {
       position: relative;
       background: url("https://i.postimg.cc/cC1nK1kw/538597696-1201028078711813-2916788055587079518-n.jpg") no-repeat center center / cover;
-      height: 100svh;
+      height: 100svh; /* iOS 更穩的視窗高 */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -194,6 +205,7 @@
         </a>
       </div>
 
+      <!-- 你的頁面文案保留不變 -->
       <h1>【 樂活精彩，學習無窮】</h1>
       <h2>學習不因年齡受限，成長永遠都能開始。</h2>
       <h3>
@@ -218,4 +230,3 @@
   </div>
 </body>
 </html>
-
