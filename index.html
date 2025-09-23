@@ -1,6 +1,210 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>樂活精彩，學習無窮</title>
+  <style>
+    /* ========= 基本 (桌機樣式) ========= */
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: "Microsoft JhengHei", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", Arial, sans-serif;
+      color: #fff;
+    }
+
+    .hero {
+      position: relative;
+      background: url("https://i.postimg.cc/cC1nK1kw/538597696-1201028078711813-2916788055587079518-n.jpg") no-repeat center center / cover;
+      height: 100svh;                  /* iOS 更穩的視窗高 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 1000px;
+      width: 100%;
+      text-align: center;
+      padding-inline: 16px;            /* 邊緣安全距 */
+    }
+
+    .logo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: #fff;
+      margin: 0 auto 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .logo img { width: 100%; cursor: pointer; }
+
+    h1 {
+      font-size: 60px;
+      font-weight: 700;
+      margin: 0 0 15px 0;
+      text-wrap: balance;
+    }
+    h2 {
+      font-size: 25px;
+      font-weight: 650;
+      color: #deb3cf;
+      margin: 0 0 10px 0;
+    }
+    h3 {
+      font-size: 27px;
+      font-weight: 550;
+      line-height: 1.8;
+      color: #f8f8f8;
+      margin: 0 auto 35px auto;
+      white-space: pre-line;           /* 保留換行 */
+      max-width: 800px;
+      text-align: left;                /* 文字靠左，區塊仍置中 */
+    }
+
+    h4 { margin: 0; font-size: 0; font-weight: normal; }
+
+    /* 外層透明膠囊（桌機） */
+    .buttons-capsule {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .buttons-capsule .buttons {
+      display: flex;
+      gap: 20px;
+      padding: 30px 80px;
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 9999px;
+      background: rgba(255,255,255,0.2);
+      flex-wrap: wrap;
+    }
+
+    /* 兩顆按鈕（桌機） */
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .buttons a {
+      flex: 1 1 0;
+      min-width: 300px;
+      max-width: 360px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      border-radius: 9999px;
+      font-size: 25px;
+      font-weight: 550;
+      margin: 0 25px;
+      line-height: 1;
+      text-decoration: none;
+      transition: .2s;
+      box-sizing: border-box;
+      border: 2px solid transparent;
+      white-space: nowrap;
+    }
+    .btn-primary { background: #c084fc; color: #fff; }
+    .btn-primary:hover { background: #9333ea; }
+    .btn-outline  { background: transparent; color: #fff; border-color: #fff; }
+    .btn-outline:hover { background: rgba(255,255,255,0.2); }
+
+    /* ========= 手機版 (≤640px) — 做到跟你的示意圖一致 ========= */
+    @media (max-width: 640px) {
+      .logo {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 15px;
+      }
+
+      h1 { font-size: 32px; }
+      h2 { font-size: 18px; margin-bottom: 8px; }
+      h3 {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 640px;
+        padding-inline: 10px;          /* 內縮避免貼邊 */
+      }
+
+      /* 外膠囊縮小、改垂直堆疊 */
+      .buttons-capsule .buttons {
+        flex-direction: column;        /* ← 上下排列 */
+        padding: 20px;
+        gap: 12px;
+        border-radius: 24px;
+      }
+
+      .buttons a {
+        min-width: unset;
+        max-width: 100%;
+        width: 100%;                   /* 滿版按鈕 */
+        margin: 0;
+        font-size: 18px;
+        padding: 14px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay"></div>
+
+    <div class="content">
+      <!-- Logo（可點擊導向） -->
+      <div class="logo">
+        <a href="https://line.me/ti/p/LUx8E9NxfS" target="_blank" rel="noopener">
+          <img src="https://i.postimg.cc/BQC9rycD/photo-2025-09-23-10-09-25.jpg" alt="Logo" />
+        </a>
+      </div>
+
+      <!-- 標題們 -->
+      <h1>【 樂活精彩，學習無窮】</h1>
+      <h2>學習不因年齡受限，成長永遠都能開始。</h2>
+
+      <h3>
+在每一個日子裡，學習都是最美的投資。
+無論是翻開書本、拿起畫筆、踏上運動的第一步，
+都能讓我們的生活更有色彩、心靈更有力量。
+
+年齡不是阻礙，而是最珍貴的養分。
+在人生的不同階段，學習能帶來新的喜悅、
+新的朋友，還有全新的自己。
+      </h3>
+
+      <!-- 外層透明膠囊 + 兩顆按鈕 -->
+      <h4>
+        <div class="buttons-capsule">
+          <div class="buttons">
+            <a class="btn-primary" href="https://line.me/ti/p/LUx8E9NxfS" target="_blank" rel="noopener">
+              → 點擊此「立即報名」
+            </a>
+            <a class="btn-outline" href="#">
+              全台多地開課，近家就能參加
+            </a>
+          </div>
+        </div>
+      </h4>
+    </div>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>樂活精彩，學習無窮</title>
@@ -174,3 +378,4 @@
   </div>
 </body>
 </html>
+
