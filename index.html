@@ -48,7 +48,7 @@
     }
     .logo img { 
       width: 100%; 
-      cursor: pointer; /* 滑鼠變手指，提示可點擊 */
+      cursor: pointer;
     }
 
     /* h1 ~ h3 樣式 */
@@ -65,13 +65,14 @@
       margin-bottom: 10px;
     }
     h3 {
-  font-size: 27px;
-  font-weight: 550;
-  color: #f8f8f8;
-  line-height: 1.8;
-  margin: 0 auto 35px auto;  /* 區塊置中 */
-  white-space: pre-line;     /* 保留換行 */
-  max-width: 800px;          /* 區塊最大寬度，避免太寬 */
+      font-size: 27px;
+      font-weight: 550;
+      color: #f8f8f8;
+      line-height: 1.8;
+      margin: 0 auto 35px auto;  
+      white-space: pre-line;     
+      max-width: 800px;          
+      text-align: left;          /* ⬅️ 改成靠左 */
     }
 
     h4 {
@@ -87,14 +88,14 @@
       margin-top: 30px;
     }
     .buttons-capsule .buttons {
-  display: flex;
-  gap: 20px;
-  padding: 30px 80px;
-  border: 1px solid rgba(255,255,255,0.6); /* 白色邊框 */
-  border-radius: 9999px;
-  background: rgba(255,255,255,0.2); /* ← 半透明黑底 */
-  flex-wrap: wrap;
-}
+      display: flex;
+      gap: 20px;
+      padding: 30px 80px;
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 9999px;
+      background: rgba(255,255,255,0.2);
+      flex-wrap: wrap;
+    }
 
     /* 按鈕樣式 */
     .buttons {
@@ -105,42 +106,31 @@
       flex-wrap: wrap;
     }
     .buttons a {
-  flex: 1 1 0;
-  min-width: 300px;
-  max-width: 360px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 24px;
-  border-radius: 9999px;
-  font-size: 25px;    /* ← 調整字體大小 */
-  font-weight: 550;   /* ← 調整字體粗細 */
-  margin: 0 25px;  /* 左右各留 25px 空間 */
-  line-height: 1;
-  text-decoration: none;
-  transition: 0.2s;
-  box-sizing: border-box;
-  border: 2px solid transparent;
-  white-space: nowrap;
-}
+      flex: 1 1 0;
+      min-width: 300px;
+      max-width: 360px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      border-radius: 9999px;
+      font-size: 25px;    
+      font-weight: 550;   
+      margin: 0 25px;     
+      line-height: 1;
+      text-decoration: none;
+      transition: 0.2s;
+      box-sizing: border-box;
+      border: 2px solid transparent;
+      white-space: nowrap;
+    }
     .btn-primary { background: #c084fc; color: #fff; }
     .btn-primary:hover { background: #9333ea; }
 
     .btn-outline { background: transparent; color: #fff; border-color: #fff; }
     .btn-outline:hover { background: rgba(255,255,255,0.2); }
 
-    /* 手機版 */
-    @media (max-width: 640px) {
-      .buttons a { min-width: 100%; max-width: none; }
-      .buttons-capsule .buttons {
-        row-gap: 12px;
-        padding: 14px 16px;
-        border-radius: 24px;
-      }
-      h1 { font-size: 40px; }
-      h2 { font-size: 22px; }
-      h3 { font-size: 22px; }
-    }
+    /* 移除手機版的特別樣式 → 桌機、手機統一 */
   </style>
 </head>
 <body>
